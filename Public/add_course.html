@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <title>Add Course</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="add_course.html">Add Course</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <h1>Add Course</h1>
+      <form id="addCourseForm">
+        <label for="courseName">Course Name:</label>
+        <input type="text" id="courseName" name="courseName" required />
+        <label for="teacher">Teacher:</label>
+        <input type="text" id="teacher" name="teacher" required />
+        <!-- Add more fields as needed -->
+        <button type="submit">Add Course</button>
+      </form>
+    </div>
+
+    <script>
+      window.addEventListener("DOMContentLoaded", (event) => {
+        const loginLink = document.querySelector(
+          '.navbar-nav .nav-link[href="login.html"]'
+        );
+        if (localStorage.getItem("token")) {
+          loginLink.textContent = "Logout";
+          loginLink.href = "#";
+          loginLink.addEventListener("click", (e) => {
+            e.preventDefault();
+            localStorage.removeItem("token");
+            window.location.href = "login.html";
+          });
+        }
+      });
+
+      <footer>
+        <p>Copyright &copy; 2024 Ivy Tech Web Application Development</p>
+        <p>exampleIvyTechEmail@IvyTech.edu</p>
+        <P>(765) 333 2644</P>
+      </footer>
+      
+    </script>
+
+    <!--<script type="module" src="../app.js"></script>
+    <script type="module" src="../server.js"></script>-->
+    <script src="../courses.js"></script>
+    <script src="../add_course.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  </body>
+</html>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

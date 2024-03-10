@@ -1,0 +1,90 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+input[type="text"],
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.edit-button,
+.delete-button {
+  margin: 10px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-right: 10px; /* Add some margin to the right of each button */
+}
+
+footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f94449;
+  text-align: center;
+  margin: 0;
+}
+
+.carousel-inner {
+  height: 600px; /* Adjust this value to change the height */
+  width: 60%; /* Adjust this value to change the width */
+  margin: 0 auto; /* Centers the carousel when the width is less than 100% */
+}
+
+.carousel-inner img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; /* Ensures the images cover the carousel without being stretched or squished */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+  }
+
